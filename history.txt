@@ -1,0 +1,317 @@
+ 8985  miniukube
+ 8986  kubectl
+ 8987  kubectl get clusters
+ 8988  kubectl get pods
+ 8989  kubectl get namespaces
+ 8998  conda deactivate
+ 8999  kubectl
+ 9000  kubect get namespaces
+ 9001  kubectl get namespaces
+ 9002  minikube
+ 9003  minikube status
+ 9004  minikube start
+ 9005  minikube kubectl -- get pods -A
+ 9006  kubectl get pods
+ 9007  kubectl get namespaces
+ 9008  kubectl get pods default
+ 9009  clear
+ 9010  minukube status
+ 9011  kubectl
+ 9012  kubectl minukube run
+ 9013  kubectl minukube start
+ 9014  minikube start
+ 9015  clear
+ 9016  kubect get namespaces
+ 9017  kubectl get namespaces
+ 9018  clear
+ 9019  kubectl run nginx --image=nginx
+ 9020  kubectl get pods
+ 9021  kubectl describe pod nginx
+ 9022  kubectl get pods
+ 9023  kubectl describe pod nginx
+ 9024  kubectl get pods
+ 9025  clear
+ 9026  docker ps | grep nginx
+ 9027  docker ps
+ 9028  docker exec -it 0e8255b72a39 sh
+ 9029  kubectl version --client
+ 9030  kubectl version --client --short
+ 9031  minikube
+ 9032  minikube dashboard
+ 9033  minikube version
+ 9034  minikube status
+ 9035  conda deactivate
+ 9036  minikube ip
+ 9037  ssh docker@192.168.49.2
+ 9038  ssh 192.168.49.2
+ 9039  docker ps
+ 9040  kubectl cluster-info
+ 9041  kubectl get nodes
+ 9042  kubectl get pods
+ 9043  kubectl get namespaces
+ 9044  kubectl get pods --namespace=kube-system
+ 9045  clear
+ 9046  kubectl run nginx1 --image=nginx
+ 9047  kubectl get pods
+ 9048  kubectl describe pod nginx1
+ 9049  clea
+ 9050  clear
+ 9051  kubectl get pods --namespace=kube-system
+ 9052  clear
+ 9053  kubectl get pods
+ 9054  kubectl get services
+ 9055  kubectl get namespaces
+ 9056  docker exec -it nginx1 sh
+ 9057  docker ps
+ 9058  docker exec -it 0e8255b72a39 sh
+ 9059  kubectl get pods -o wide
+ 9060  curl 172.17.0.5
+ 9061  kubectl delete pod nginx1
+ 9062  kubectl get pods
+ 9063  clear
+ 9064  kubectl delete pod nginx
+ 9065  alias k8s="kubectl"
+ 9066  k8s get pods
+ 9067  k8s get namespaces
+ 9068  clear
+ 9069  k8s create deployments nginx-deployment --image=nginx
+ 9070  k8s create deployment nginx-deployment --image=nginx
+ 9071  k8s get deployments
+ 9072  k8s get pods
+ 9073  k8s describe nginx-deployment
+ 9074  k8s describe deployment nginx-deployment
+ 9075  clear
+ 9076  k8s get pods
+ 9077  k8s describe pod nginx-deployment-794f656f8b-lbhv4
+ 9078  clear
+ 9079  k8s scale deployment nginx-deployment --replicas=5
+ 9080  k8s get pods
+ 9081  k8s get pods -o wide
+ 9082  k8s scale deployment nginx-deployment --replicas=3
+ 9083  k8s get pods
+ 9084  clear
+ 9085  minikube ip
+ 9086  docker ps
+ 9087  docker exec -it 0e8255b72a39 sh
+ 9088  clear
+ 9089  k8s get pods -o wide
+ 9090  k8s get deploy
+ 9091  k8s expose deployment nginx-deployment --port=8080 --target=80
+ 9092  k8s expose deployment nginx-deployment --port=8080 --target-port=80
+ 9093  k8s get services
+ 9094  curl 10.110.6.123:8080
+ 9095  k8s describe service nginx-depoyment
+ 9096  k8s get svc
+ 9097  docker exec -it 0e8255b72a39 sh
+ 9098  clear
+ 9099  k8s get svc
+ 9100  k8s describe services nginx-deployment
+ 9101  k8s scale deployment nginx-deployment --replicas=25
+ 9102  k8s get pods -o wide
+ 9103  k8s delete deployment nginx-deployment
+ 9104  k8s get deployments
+ 9105  k8s get svc
+ 9106  k8s get pods
+ 9107  ku
+ 9108  k8s delete service nginx-deployment
+ 9109  k8s get svc
+ 9110  k8s get deploy
+ 9111  clear
+ 9112  ls
+ 9113  cd desktop
+ 9114  cd DEVELOPMENT
+ 9115  ls
+ 9116  cd DevOps
+ 9117  ls
+ 9118  mkdir node-express-k8s
+ 9119  ls
+ 9120  cd node-express-k8s
+ 9121  ls
+ 9122  npm ini -y
+ 9123  npm install nodemon express morgan
+ 9124  code .
+ 9125  node app.js
+ 9126  clear
+ 9127  npm start
+ 9128  curl http://localhost:5000
+ 9129  npm start
+ 9130  curl http://localhost:5000
+ 9131  ls
+ 9132  docker build node-express-k8s .
+ 9133  docker build -t node-express-k8s .
+ 9134  docker images
+ 9135  docker run -p 5000:5000 node-express-k8s
+ 9136  docker ps
+ 9137  docker run -p 5000:5000 node-express-k8s -d
+ 9138  docker run -d -p 5000:5000 node-express-k8s 
+ 9139  docker logs 945ad67491f9e632325477c3d0f521011ddc6aa2056675992c872f67e975ac1e
+ 9140  docker logs 945ad67491f9e632325477c3d0f521011ddc6aa2056675992c872f67e975ac1e-f
+ 9141  docker logs 945ad67491f9e632325477c3d0f521011ddc6aa2056675992c872f67e975ac1e -f
+ 9142  docker build -t 40781998/node-express-k8s .
+ 9143  docker ps
+ 9144  docker images
+ 9145  docker images | 40781998/node-express-k8
+ 9146  docker images | 40781998/node-express-k8s
+ 9147  docker images | node-express
+ 9148  docker images | node-express-k8s
+ 9149  docker login
+ 9150  docker run -p 5000:5000 40781998/node-express-k8s
+ 9151  docker run -p 5001:5000 40781998/node-express-k8s
+ 9152  docker build build . 40781998/node-express-k8s
+ 9153  docker build . -t 40781998/node-express-k8s
+ 9154  docker images
+ 9155  docker run -p 5000:5000 40781998/node-express-k8s
+ 9156  docker push 40781998/node-express-k8s 
+ 9157  cles
+ 9158  clear
+ 9159  k8s get deploy
+ 9160  k8s create deployment node-express-k8s --image=40781998/node-express-k8s
+ 9161  k8s get deploy
+ 9162  k8s describe deployment node-express-k8s
+ 9163  clear
+ 9164  k8s get pods
+ 9165  k8s get deploy
+ 9166  k8s expose deployment node-express-k8s --port=5000
+ 9167  k8s get svc
+ 9168  curl 10.103.1.200:5000
+ 9169  docker ps
+ 9170  docker exec -it 0e8255b72a39 sh
+ 9171  k8s get deploy
+ 9172  k8s scale deployment node-express-k8s --replicas=6
+ 9173  k8s get pods
+ 9174  clear
+ 9175  docker ps
+ 9176  k8s get pod -o wide
+ 9177  k8s get svc
+ 9178  docker exec -it 0e8255b72a39 sh
+ 9179  k8s delete svc node-express-k8s
+ 9180  k8s get svc
+ 9181  k8s expose delployment node-express-k8s --type=NodePort --port=5000
+ 9182  k8s expose deployment node-express-k8s --type=NodePort --port=5000
+ 9183  k8s get svc
+ 9184  curl 10.99.47.167:5000
+ 9185  minikube ip
+ 9186  curl 192.168.49.2:5000
+ 9187  curl 192.168.49.2:30932
+ 9188  clear
+ 9189  minikube ip
+ 9190  k8s get svc
+ 9191  minikube service node-express-k8s
+ 9192  k8s get svc
+ 9193  history>history.txt
+ 9194  clear
+ 9195  k8s delete svc node-express-k8s
+ 9196  k8s get svc
+ 9197  k8s expose node-express-k8s --type=LoadBalancer --port=5000
+ 9198  k8s expose deployment node-express-k8s --type=LoadBalancer --port=5000
+ 9199  k8s get svc
+ 9200  minikube service node-express-k8s
+ 9201  k8s get svc
+ 9202  k8s get deploy
+ 9203  conda deactivate
+ 9204  cd Desktop/DEVELOPMENT
+ 9205  ls
+ 9206  cd DevOps
+ 9207  ls
+ 9208  cd node-express-k8s
+ 9209  ls
+ 9210  code .
+ 9211  k8s get pods
+ 9212  alias k8s="kubectl"
+ 9213  k8s get pods
+ 9214  conda deactivate
+ 9215  minikube status
+ 9216  minikube dashboard
+ 9217  minikube start
+ 9218  k8s 
+ 9219  alias k8s="kubectl"
+ 9220  k8s get pods
+ 9221  conda deactivate
+ 9222  minikube dashboard
+ 9223  clear
+ 9224  k8s get svc
+ 9225  clear
+ 9226  minikube dashboard
+ 9227  k8s get svc
+ 9228  minikube service node-express-k8s
+ 9229  docker ps
+ 9230  clear
+ 9231  docker images
+ 9232  docker build . -t 40781998/node-express-k8s:v2.0.0
+ 9233  docker run -p 5000:5000 40781998/node-express-k8s
+ 9234  docker images
+ 9235  docker run -p 5000:5000 40781998/node-express-k8s:v2.0.0
+ 9236  docker push 40781998/node-express-k8s:v2.0.0
+ 9237  clear
+ 9238  k8s get deploy
+ 9239  k8s set image deployment node-express-k8s node-express-k8s=40781998/node-express-k8s:v2.0.0
+ 9240  k8s rollout status deploy node-express-k8s
+ 9241  k8s get pods
+ 9242  clear
+ 9243  minikube service node-express-k8s
+ 9244  clear
+ 9245  k8s get pods
+ 9246  k8s delete pod node-express-k8s-77b67c6597-66dwx
+ 9247  k8s get pods
+ 9248  k8s delete deployment node-express-k8s
+ 9249  k8s delete svc node-express-k8s
+ 9250  clear
+ 9251  k8s get scv
+ 9252  k8s get svc
+ 9253  k8s get pods
+ 9254  k8s get deploy
+ 9255  ls
+ 9256  k8s apply -f deployments.yaml
+ 9257  k8s get deploy
+ 9258  k8s apply -f deployments.yaml
+ 9259  k8s get deploy
+ 9260  k8s get pods
+ 9261  k8s apply -f deployments.yaml
+ 9262  k8s get pods
+ 9263  clear
+ 9264  k8s apply -f deployments.yaml
+ 9265  k8s apply -f services.yaml
+ 9266  k8s get svc
+ 9267  minikube service node-express-k8s
+ 9268  k8s delete -f deployments.yaml -f services.yaml
+ 9269  k8s get svc
+ 9270  k8s get deploy
+ 9271  ls
+ 9272  cd node-express-nginx
+ 9273  npm start
+ 9274  npm install node-fetch
+ 9275  npm start
+ 9276  docker build . -t 40781998/node-express-nginx
+ 9277  docker push 40781998/node-express-nginx
+ 9278  clear
+ 9279  k8s get deploy
+ 9280  k8s get svc
+ 9281  cd ..
+ 9282  ls
+ 9283  k8s apply -f k8s.yaml -f nginx.yaml
+ 9284  k8s get deploy
+ 9285  ls
+ 9286  k8s get svc
+ 9287  minikube dashboard
+ 9288  k8s get deploy
+ 9289  k8s apply -f k8s.yaml -f nginx.yaml
+ 9290  k8s get pods
+ 9291  minikube service node-express-nginx
+ 9292  minikube service node-express-nginx --url
+ 9293  minikube service node-express-nginx 
+ 9294  k8s get pods
+ 9295  k8s exec nginx-5dc757bbcf-fzpzw -- nslookup
+ 9296  k8s exec nginx-5dc757bbcf-fzpzw -- nslookup nginx
+ 9297  k8s exec nginx-5dc757bbcf-fzpzw --nslookup nginx
+ 9298  k8s exec node-express-nginx-649ccd497-v26mt -- nslookup nginx
+ 9299  clear
+ 9300  k8s delete -f k8s.yaml -f nginx.yaml
+ 9301  k8s get svc
+ 9302  k8s get deploy
+ 9303  minikube status
+ 9304  minikube stop
+ 9305  minikube delete
+ 9306  minikube
+ 9307  clear
+ 9308  minikube start --driver=docker --container-runtime=cri-o
+ 

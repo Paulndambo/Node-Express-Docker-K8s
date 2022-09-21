@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-express-k8s
+spec:
+  selector:
+    matchLabels:
+      app: node-express-k8s
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: node-express-k8s
+    spec:
+      containers:
+      - name: node-express-k8s
+        image: 40781998/node-express-k8s:v2.0.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 5000

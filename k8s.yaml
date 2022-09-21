@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-express-nginx
+spec:
+  type: LoadBalancer
+  selector:
+    app: node-express-nginx
+  ports:
+  - port: 5001
+    targetPort: 5000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-express-nginx
+spec:
+  selector:
+    matchLabels:
+      app: node-express-nginx
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: node-express-nginx
+    spec:
+      containers:
+      - name: node-express-nginx
+        image: 40781998/node-express-nginx
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 5000
